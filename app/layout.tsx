@@ -2,11 +2,10 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import ClerkThemeProvider from '@/components/ClerkThemeProvider';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import Script from 'next/script'; // ✅ Use next/script instead
-
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -18,16 +17,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'ExpenseTracker AI - Smart Financial Management',
+  title: 'ExpensifyAI - Smart Financial Management',
   description:
     'AI-powered expense tracking app with intelligent insights, smart categorization, and personalized financial recommendations',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
   return (
     <html lang='en' suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className='antialiased bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300'>
@@ -46,9 +48,9 @@ export default function RootLayout({
 
         <ThemeProvider>
           <ClerkThemeProvider>
-            <Navbar />
+            <Navbar/>
             {children}
-            <Footer />
+            <Footer/>
           </ClerkThemeProvider>
         </ThemeProvider>
       </body>

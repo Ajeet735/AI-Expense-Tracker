@@ -17,7 +17,7 @@ const Guest = () => {
           <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-gray-100 leading-tight'>
             Welcome to{' '}
             <span className='bg-gradient-to-r from-emerald-600 via-green-500 to-teal-500 bg-clip-text text-transparent'>
-              ExpenseTracker AI
+              ExpensifyAI 
             </span>
           </h1>
           <p className='text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mx-auto px-2 sm:px-0'>
@@ -78,200 +78,71 @@ const Guest = () => {
         </div>
       </section>
 
-      {/* Frequently Asked Questions Section */}
-      <section className='py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm relative overflow-hidden'>
-        <div className='absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500'></div>
-        <div className='max-w-4xl mx-auto'>
-          <div className='text-center mb-10 sm:mb-12 md:mb-16'>
-            <div className='inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-3 py-1 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6'>
-              <span className='w-1.5 h-1.5 bg-emerald-500 dark:bg-emerald-400 rounded-full'></span>
-              FAQ
-            </div>
-            <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-gray-100 px-2 sm:px-0'>
-              Frequently Asked{' '}
-              <span className='text-emerald-600 dark:text-emerald-400'>
-                Questions
-              </span>
-            </h2>
-            <p className='text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-2 sm:px-0'>
-              Everything you need to know about ExpenseTracker AI and how it can
-              transform your financial management.
-            </p>
-          </div>
+{/* How It Works Section */}
+<section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-gradient-to-br from-gray-50 via-white to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/20">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-10 sm:mb-12 md:mb-16">
+      <div className="inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-3 py-1 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+        <span className="w-1.5 h-1.5 bg-emerald-500 dark:bg-emerald-400 rounded-full"></span>
+        How It Works
+      </div>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-gray-100 px-2 sm:px-0">
+        Track Smarter, <span className="text-emerald-600 dark:text-emerald-400">Spend Better</span>
+      </h2>
+      <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-2 sm:px-0">
+        ExpensifyAI makes managing your finances effortless. Add your expenses, let AI organize them, and visualize your spending with interactive charts.
+      </p>
+    </div>
 
-          <div className='space-y-4 sm:space-y-6'>
-            <div className='group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100/50 dark:border-gray-700/50 hover:shadow-xl transition-all duration-200'>
-              <div className='flex items-start gap-3 sm:gap-4'>
-                <div className='w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-emerald-500 via-green-500 to-teal-500 rounded-md sm:rounded-lg flex items-center justify-center shadow-lg flex-shrink-0'>
-                  <span className='text-white text-xs sm:text-sm'>?</span>
-                </div>
-                <div className='flex-1'>
-                  <h3 className='text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100 mb-2 sm:mb-3'>
-                    What is ExpenseTracker AI?
-                  </h3>
-                  <p className='text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed'>
-                    ExpenseTracker AI is an intelligent financial management
-                    tool that uses artificial intelligence to help you monitor
-                    your spending patterns, get smart category suggestions, and
-                    receive personalized insights to improve your financial
-                    health.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className='group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100/50 dark:border-gray-700/50 hover:shadow-xl transition-all duration-200'>
-              <div className='flex items-start gap-3 sm:gap-4'>
-                <div className='w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-green-500 via-teal-500 to-emerald-500 rounded-md sm:rounded-lg flex items-center justify-center shadow-lg flex-shrink-0'>
-                  <span className='text-white text-xs sm:text-sm'>🤖</span>
-                </div>
-                <div className='flex-1'>
-                  <h3 className='text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100 mb-2 sm:mb-3'>
-                    How does the AI work?
-                  </h3>
-                  <p className='text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed'>
-                    Our AI analyzes your spending data to automatically
-                    categorize expenses, detect patterns, and provide
-                    personalized recommendations. You can also ask the AI
-                    questions about your spending habits and get instant,
-                    intelligent responses.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className='group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg border border-gray-100/50 dark:border-gray-700/50 hover:shadow-xl transition-all duration-200'>
-              <div className='flex items-start gap-3 sm:gap-4'>
-                <div className='w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-teal-500 via-emerald-500 to-green-500 rounded-md sm:rounded-lg flex items-center justify-center shadow-lg flex-shrink-0'>
-                  <span className='text-white text-xs sm:text-sm'>💎</span>
-                </div>
-                <div className='flex-1'>
-                  <h3 className='text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100 mb-2 sm:mb-3'>
-                    Is ExpenseTracker AI free?
-                  </h3>
-                  <p className='text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed'>
-                    Yes, ExpenseTracker AI offers a free plan with basic AI
-                    features including smart categorization and insights.
-                    Premium plans are available for advanced AI analytics and
-                    unlimited AI interactions.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      {/* Step 1 */}
+      <div className="relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1">
+        <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+          <span className="text-white text-xl">➕</span>
         </div>
-      </section>
+        <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Add Expenses</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          Quickly log your daily spending with amount, date, and category like food, shopping, college, and more.
+        </p>
+      </div>
 
-      {/* Testimonials Section */}
-      <section className='py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-gradient-to-br from-gray-50 via-white to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/20'>
-        <div className='max-w-6xl mx-auto'>
-          <div className='text-center mb-10 sm:mb-12 md:mb-16'>
-            <div className='inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-3 py-1 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6'>
-              <span className='w-1.5 h-1.5 bg-emerald-500 dark:bg-emerald-400 rounded-full'></span>
-              Testimonials
-            </div>
-            <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-gray-100 px-2 sm:px-0'>
-              What Our Users{' '}
-              <span className='text-emerald-600 dark:text-emerald-400'>
-                Say
-              </span>
-            </h2>
-            <p className='text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-2 sm:px-0'>
-              Join thousands of satisfied users who have transformed their
-              financial habits with ExpenseTracker AI.
-            </p>
-          </div>
-
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8'>
-            <div className='group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1'>
-              <div className='absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-green-500/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
-              <div className='relative z-10'>
-                <div className='flex items-center gap-3 mb-4'>
-                  <div className='w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-emerald-500 via-green-500 to-teal-500 rounded-full flex items-center justify-center shadow-lg'>
-                    <span className='text-white text-xs sm:text-sm font-bold'>
-                      S
-                    </span>
-                  </div>
-                  <div>
-                    <div className='font-bold text-gray-900 dark:text-gray-100 text-sm sm:text-base'>
-                      Sarah L.
-                    </div>
-                    <div className='text-xs sm:text-sm text-gray-500 dark:text-gray-400'>
-                      Verified User
-                    </div>
-                  </div>
-                </div>
-                <p className='text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed mb-4'>
-                  &ldquo;ExpenseTracker AI has completely transformed my
-                  budgeting. The AI insights are incredibly helpful and I now
-                  have full control over my finances!&rdquo;
-                </p>
-                <div className='flex text-emerald-500 text-xs sm:text-sm'>
-                  ⭐⭐⭐⭐⭐
-                </div>
-              </div>
-            </div>
-
-            <div className='group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1'>
-              <div className='absolute inset-0 bg-gradient-to-br from-green-500/5 to-teal-500/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
-              <div className='relative z-10'>
-                <div className='flex items-center gap-3 mb-4'>
-                  <div className='w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-green-500 via-teal-500 to-emerald-500 rounded-full flex items-center justify-center shadow-lg'>
-                    <span className='text-white text-xs sm:text-sm font-bold'>
-                      J
-                    </span>
-                  </div>
-                  <div>
-                    <div className='font-bold text-gray-900 dark:text-gray-100 text-sm sm:text-base'>
-                      John D.
-                    </div>
-                    <div className='text-xs sm:text-sm text-gray-500 dark:text-gray-400'>
-                      Verified User
-                    </div>
-                  </div>
-                </div>
-                <p className='text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed mb-4'>
-                  &ldquo;The AI-powered insights from ExpenseTracker have helped
-                  me identify and reduce unnecessary spending. The smart
-                  categorization is amazing!&rdquo;
-                </p>
-                <div className='flex text-emerald-500 text-xs sm:text-sm'>
-                  ⭐⭐⭐⭐⭐
-                </div>
-              </div>
-            </div>
-
-            <div className='group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1 sm:col-span-2 lg:col-span-1'>
-              <div className='absolute inset-0 bg-gradient-to-br from-teal-500/5 to-emerald-500/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
-              <div className='relative z-10'>
-                <div className='flex items-center gap-3 mb-4'>
-                  <div className='w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-teal-500 via-emerald-500 to-green-500 rounded-full flex items-center justify-center shadow-lg'>
-                    <span className='text-white text-xs sm:text-sm font-bold'>
-                      E
-                    </span>
-                  </div>
-                  <div>
-                    <div className='font-bold text-gray-900 dark:text-gray-100 text-sm sm:text-base'>
-                      Emily R.
-                    </div>
-                    <div className='text-xs sm:text-sm text-gray-500 dark:text-gray-400'>
-                      Verified User
-                    </div>
-                  </div>
-                </div>
-                <p className='text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed mb-4'>
-                  &ldquo;ExpenseTracker AI is so intelligent and easy to use.
-                  The AI recommendations are spot-on and have genuinely improved
-                  my financial habits!&rdquo;
-                </p>
-                <div className='flex text-emerald-500 text-xs sm:text-sm'>
-                  ⭐⭐⭐⭐⭐
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Step 2 */}
+      <div className="relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1">
+        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+          <span className="text-white text-xl">🗂️</span>
         </div>
-      </section>
+        <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Smart Categorization</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          Expenses are automatically organized into categories, helping you see exactly where your money goes.
+        </p>
+      </div>
+
+      {/* Step 3 */}
+      <div className="relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1">
+        <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+          <span className="text-white text-xl">📊</span>
+        </div>
+        <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Visual Insights</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          Track spending patterns with beautiful charts and bar graphs updated in real-time.
+        </p>
+      </div>
+
+      {/* Step 4 */}
+      <div className="relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1">
+        <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 via-green-500 to-teal-500 rounded-lg flex items-center justify-center mb-4 shadow-lg">
+          <span className="text-white text-xl">🤖</span>
+        </div>
+        <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">AI Recommendations</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          Get personalized insights and tips from AI to improve your budgeting and save more.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     </div>
   );
 };
