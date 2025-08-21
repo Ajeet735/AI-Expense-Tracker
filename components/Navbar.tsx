@@ -46,60 +46,30 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation Links */}
-          <SignedIn>
-         <div className="hidden md:flex items-center space-x-1">
-            <Link
-              href="/"
-              className="relative text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 group"
-            >
-              <span className="relative z-10">Home</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-            </Link>
+  <SignedIn>
+  {/* Desktop Links */}
+  <div className="hidden md:flex items-center space-x-1">
+    <Link href="/" className="px-3 py-2 hover:text-gray-400">Home</Link>
+    <Link href="/about" className="px-3 py-2 hover:text-gray-400">About</Link>
+    <Link href="/contact" className="px-3 py-2 hover:text-gray-400">Contact</Link>
+  </div>
 
-            <Link
-              href="/about"
-              className="relative text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 group"
-            >
-              <span className="relative z-10">About</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-            </Link>
+  {/* Mobile Links */}
+  {isMobileMenuOpen && (
+    <div className="flex flex-col md:hidden mt-3 space-y-2">
+      <Link href="/" onClick={closeMobileMenu} className="px-4 py-2 hover:text-gray-400">
+        <span>🏠</span> <span>Home</span>
+      </Link>
+      <Link href="/about" onClick={closeMobileMenu} className="px-4 py-2 hover:text-gray-400">
+        <span>ℹ️</span> <span>About</span>
+      </Link>
+      <Link href="/contact" onClick={closeMobileMenu} className="px-4 py-2 hover:text-gray-400">
+        <span>📞</span> <span>Contact</span>
+      </Link>
+    </div>
+  )}
+</SignedIn>
 
-            <Link
-              href="/contact"
-              className="relative text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 group"
-            >
-              <span className="relative z-10">Contact</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-            </Link>
-          </div>
-
-           {/* Mobile Navigation Links */}
-          <Link
-              href="/"
-              className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 text-sm font-medium transition-all duration-200 active:scale-95"
-              onClick={closeMobileMenu}
-            >
-              <span className="text-base">🏠</span>
-              <span>Home</span>
-            </Link>
-            <Link
-              href="/about"
-              className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 text-sm font-medium transition-all duration-200 active:scale-95"
-              onClick={closeMobileMenu}
-            >
-              <span className="text-base">ℹ️</span>
-              <span>About</span>
-            </Link>
-            <Link
-              href="/contact"
-              className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 text-sm font-medium transition-all duration-200 active:scale-95"
-              onClick={closeMobileMenu}
-            >
-              <span className="text-base">📞</span>
-              <span>Contact</span>
-            </Link>
-          </SignedIn>
- 
 
           {/* Right Section */}
           <div className="flex items-center space-x-1 sm:space-x-2">

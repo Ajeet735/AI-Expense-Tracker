@@ -1,4 +1,5 @@
 'use client';
+import { FaLinkedin } from "react-icons/fa"
 
 const ContactPage = () => {
   return (
@@ -23,7 +24,7 @@ const ContactPage = () => {
           </p>
           <div className='mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2 sm:px-0'>
             <a
-              href='mailto:ajetkumar.dev735@gmail.com'
+              href='ajetkumar.dev735@gmail.com'
               className='group relative overflow-hidden bg-gradient-to-r from-emerald-600 via-green-500 to-teal-500 hover:from-emerald-700 hover:via-green-600 hover:to-teal-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold shadow-2xl hover:shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5'
             >
               <span className='relative z-10 flex items-center justify-center gap-2'>
@@ -32,13 +33,6 @@ const ContactPage = () => {
               </span>
               <div className='absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
             </a>
-            {/* <a
-              href='tel:7903395232
-              className='group border-2 border-emerald-500/20 dark:border-emerald-400/20 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold transition-all duration-200 backdrop-blur-sm flex items-center justify-center gap-2'
-            >
-              Call Us
-              <span className='text-lg'>📞</span>
-            </a> */}
           </div>
         </div>
       </section>
@@ -61,6 +55,7 @@ const ContactPage = () => {
           
           </div>
 
+{/* connect with the several ways  */}
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8'>
             <div className='group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1 text-center'>
               <div className='absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-green-500/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
@@ -88,6 +83,8 @@ const ContactPage = () => {
               </div>
             </div>
 
+            {/* connect with the phone number */}
+
             <div className='group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1 text-center'>
               <div className='absolute inset-0 bg-gradient-to-br from-green-500/5 to-teal-500/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
               <div className='relative z-10'>
@@ -110,6 +107,40 @@ const ContactPage = () => {
                 </a>
               </div>
             </div>
+       
+     
+{/* LinkedIn Support Box */}
+<div className='group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl border border-gray-100/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-200 hover:-translate-y-1 text-center'>
+  {/* Match gradient with phone/email hover effect */}
+  <div className='absolute inset-0 bg-gradient-to-br from-green-500/5 to-teal-500/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
+  
+  <div className='relative z-10'>
+    {/* Keep LinkedIn blue identity but blend in */}
+    <div className='w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-500 via-teal-500 to-emerald-500 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg mb-4 sm:mb-6 mx-auto'>
+      <FaLinkedin className='text-white text-lg sm:text-xl' />  {/* LinkedIn Logo */}
+    </div>
+
+    <h3 className='text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-gray-900 dark:text-gray-100'>
+      LinkedIn
+    </h3>
+    <p className='text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-3 sm:mb-4 leading-relaxed'>
+      Connect with me on LinkedIn for networking, collaboration, and professional updates.
+    </p>
+    
+    {/* Link color same as Phone/Email */}
+    <a
+      href="https://www.linkedin.com/in/ajeet-kumar-4ba383244/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 font-medium transition-colors duration-200 text-sm sm:text-base"
+    >
+      linkedin.com/in/ajeet-kumar-4ba383244
+      <span className="text-sm">→</span>
+    </a>
+  </div>
+</div>
+
+
 
          
           </div>

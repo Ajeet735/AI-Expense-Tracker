@@ -28,13 +28,7 @@ export default async function HomePage() {
               {/* User Image - responsive sizing */}
               <div className='relative flex-shrink-0'>
                 
-              {/* <Image
-  src={user.imageUrl}
-  alt={`${user.firstName}'s profile`}
-  width={80}
-  height={80}
-  className='w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border-2 border-white dark:border-gray-600 shadow-lg'
-/> */}
+            
 
                 
               

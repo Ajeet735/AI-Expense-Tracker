@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: 'ExpensifyAI - Smart Financial Management',
   description:
     'AI-powered expense tracking app with intelligent insights, smart categorization, and personalized financial recommendations',
+  icons: {
+    icon: "/favicon2.ico",
+  },
 };
 
 export default async function RootLayout({
